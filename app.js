@@ -7,7 +7,7 @@ const PRODUCTS = [
 		material: "steel",
 		strap: "leather",
 		wr: "10ATM",
-		img: "./static/products/aurora-auto.jpg",
+		img: "./static/products/aurora-auto.svg",
 		desc: "Swiss automatic movement, sapphire crystal, 10ATM water resistance."
 	},
 	{
@@ -17,7 +17,7 @@ const PRODUCTS = [
 		material: "titanium",
 		strap: "rubber",
 		wr: "10ATM",
-		img: "./static/products/titan-solar.jpg",
+		img: "./static/products/titan-solar.svg",
 		desc: "Solar quartz, grade-5 titanium case, lightweight and rugged."
 	},
 	{
@@ -27,7 +27,7 @@ const PRODUCTS = [
 		material: "ceramic",
 		strap: "steel",
 		wr: "5ATM",
-		img: "./static/products/ceramica.jpg",
+		img: "./static/products/ceramica.svg",
 		desc: "High-tech ceramic bezel with steel bracelet. Scratch resistant."
 	},
 	{
@@ -37,7 +37,7 @@ const PRODUCTS = [
 		material: "gold",
 		strap: "leather",
 		wr: "5ATM",
-		img: "./static/products/heritage-gold.jpg",
+		img: "./static/products/heritage-gold.svg",
 		desc: "Classic 18k gold finish with hand-stitched leather strap."
 	},
 	{
@@ -47,7 +47,7 @@ const PRODUCTS = [
 		material: "steel",
 		strap: "nylon",
 		wr: "20ATM",
-		img: "./static/products/trailmaster.jpg",
+		img: "./static/products/trailmaster.svg",
 		desc: "Built for adventure. Screw-down crown and 200m water resistance."
 	},
 	{
@@ -57,7 +57,7 @@ const PRODUCTS = [
 		material: "steel",
 		strap: "steel",
 		wr: "10ATM",
-		img: "./static/products/metro-chrono.jpg",
+		img: "./static/products/metro-chrono.svg",
 		desc: "Precision chronograph with sunburst dial and luminous markers."
 	},
 	{
@@ -67,7 +67,7 @@ const PRODUCTS = [
 		material: "titanium",
 		strap: "rubber",
 		wr: "20ATM",
-		img: "./static/products/oceanic.jpg",
+		img: "./static/products/oceanic.svg",
 		desc: "Professional diver design with helium escape valve."
 	},
 	{
@@ -77,7 +77,7 @@ const PRODUCTS = [
 		material: "steel",
 		strap: "leather",
 		wr: "3ATM",
-		img: "./static/products/minimalist.jpg",
+		img: "./static/products/minimalist.svg",
 		desc: "Slim profile everyday watch with clean, modern dial."
 	}
 ];
