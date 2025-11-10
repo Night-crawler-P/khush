@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Timely — Premium Watches</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<div class="brand">
+				<img src="./static/logo.svg" alt="Timely" class="logo" />
+				<span class="brand-name">Timely</span>
+			</div>
+			<nav class="nav">
+				<a href="#" class="nav-link active">Home</a>
+				<a href="#collection" class="nav-link">Collection</a>
+				<a href="#about" class="nav-link">About</a>
+				<a href="#contact" class="nav-link">Contact</a>
+			</nav>
+			<button id="cartButton" class="cart-btn" aria-label="Open cart">
+				<span class="cart-icon">🛒</span>
+				<span id="cartCount" class="cart-count">0</span>
+			</button>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="container hero-inner">
+				<div class="hero-text">
+					<h1>Time, Refined.</h1>
+					<p>Discover meticulously crafted timepieces blending heritage and innovation. Built to last a lifetime—and then some.</p>
+					<a href="#collection" class="btn btn-primary">Shop Collection</a>
+				</div>
+				<div class="hero-media">
+					<img src="./static/hero-watch.svg" alt="Premium watch" />
+				</div>
+			</div>
+		</section>
+
+		<section id="collection" class="section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Featured Collection</h2>
+					<div class="filters">
+						<select id="filterMaterial" class="filter">
+							<option value="">All Materials</option>
+							<option value="steel">Stainless Steel</option>
+							<option value="titanium">Titanium</option>
+							<option value="ceramic">Ceramic</option>
+							<option value="gold">Gold</option>
+						</select>
+						<select id="filterStrap" class="filter">
+							<option value="">All Straps</option>
+							<option value="leather">Leather</option>
+							<option value="steel">Steel</option>
+							<option value="rubber">Rubber</option>
+							<option value="nylon">Nylon</option>
+						</select>
+						<select id="sortBy" class="filter">
+							<option value="featured">Sort: Featured</option>
+							<option value="price-asc">Price: Low to High</option>
+							<option value="price-desc">Price: High to Low</option>
+							<option value="name-asc">Name: A to Z</option>
+							<option value="name-desc">Name: Z to A</option>
+						</select>
+					</div>
+				</div>
+				<div id="productGrid" class="product-grid"></div>
+			</div>
+		</section>
+
+		<section id="about" class="section section-alt">
+			<div class="container split">
+				<div>
+					<h2>Built for Every Moment</h2>
+					<p>From boardrooms to backcountry, our watches are tested beyond industry standards. Scratch-resistant sapphire, 10ATM water resistance, and movements calibrated to ±3 seconds per day.</p>
+				</div>
+				<ul class="feature-list">
+					<li>Swiss automatic and solar quartz movements</li>
+					<li>Lifetime movement warranty</li>
+					<li>Ethically sourced materials</li>
+					<li>Free worldwide shipping</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="contact" class="section">
+			<div class="container split">
+				<div>
+					<h2>Questions? Ask our AI</h2>
+					<p>Click the chat bubble in the corner. Ask about shipping, sizing, water resistance, or pick a watch based on your lifestyle.</p>
+				</div>
+				<div class="contact-cta">
+					<button id="openChatbot" class="btn">Open Chat</button>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-inner">
+			<div class="brand">
+				<img src="./static/logo.svg" alt="Timely" class="logo" />
+				<span class="brand-name">Timely</span>
+			</div>
+			<p>© <span id="year"></span> Timely Co. All rights reserved.</p>
+			<div class="links">
+				<a href="#">Privacy</a>
+				<a href="#">Terms</a>
+				<a href="#">Support</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Cart Drawer -->
+	<aside id="cartDrawer" class="cart-drawer" aria-hidden="true">
+		<div class="cart-drawer-header">
+			<h3>Your Cart</h3>
+			<button id="closeCart" class="icon-btn" aria-label="Close cart">✕</button>
+		</div>
+		<div id="cartItems" class="cart-items"></div>
+		<div class="cart-drawer-footer">
+			<div class="row">
+				<span>Subtotal</span>
+				<strong id="cartSubtotal">$0.00</strong>
+			</div>
+			<button id="checkoutBtn" class="btn btn-primary">Checkout</button>
+		</div>
+	</aside>
+
+	<!-- Chatbot -->
+	<div id="chatbot" class="chatbot" aria-hidden="true">
+		<div class="chat-header">
+			<div class="agent">
+				<span class="agent-avatar">🤖</span>
+				<div>
+					<strong>Timely Assistant</strong>
+					<div class="sub">AI Chatbot</div>
+				</div>
+			</div>
+			<button id="closeChat" class="icon-btn" aria-label="Close chat">✕</button>
+		</div>
+		<div id="chatBody" class="chat-body"></div>
+		<form id="chatForm" class="chat-input">
+			<input id="chatText" type="text" placeholder="Ask about watches, shipping, water resistance..." autocomplete="off" />
+			<button class="send-btn" aria-label="Send">➤</button>
+		</form>
+	</div>
+
+	<button id="chatFab" class="chat-fab" aria-label="Open chat">💬</button>
+
+	<script src="./app.js"></script>
+	<script src="./chatbot.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,58 @@
+[
+	{
+		"id": "shipping-policy",
+		"q": "What are your shipping options and delivery times?",
+		"a": "We offer free worldwide shipping. Orders are processed in 1-2 business days. Typical delivery times: 3-5 business days in North America, 5-10 days internationally. You’ll receive tracking by email as soon as your order ships.",
+		"tags": ["ship","shipping","delivery","free","worldwide","track","tracking"]
+	},
+	{
+		"id": "returns",
+		"q": "What is your return and exchange policy?",
+		"a": "You can return or exchange any watch within 30 days in new condition with original packaging. Returns are free for defects; otherwise a small return label fee may apply depending on your region.",
+		"tags": ["return","exchange","refund","policy","30"]
+	},
+	{
+		"id": "warranty",
+		"q": "Do your watches have a warranty?",
+		"a": "Yes—lifetime movement warranty and 2 years on materials and craftsmanship. Straps and normal wear are not covered. Contact support with your order number for a fast repair or replacement.",
+		"tags": ["warranty","guarantee","lifetime","repair","replacement","support"]
+	},
+	{
+		"id": "water-resistance",
+		"q": "Can I swim or dive with these watches?",
+		"a": "Our 10ATM watches are suitable for swimming and snorkeling. 20ATM models (e.g., Oceanic, Trailmaster) are dive-ready. Avoid hot showers and saunas as heat and pressure can compromise seals.",
+		"tags": ["water","resistance","10atm","20atm","swim","dive","snorkel","sauna"]
+	},
+	{
+		"id": "materials",
+		"q": "What materials do you use?",
+		"a": "We use 316L stainless steel, grade-5 titanium for lighter builds, ceramic bezels for scratch resistance, and sapphire crystals. Straps include leather, steel bracelets, rubber, and nylon.",
+		"tags": ["material","steel","titanium","ceramic","sapphire","leather","rubber","nylon"]
+	},
+	{
+		"id": "movements",
+		"q": "What movements do you offer?",
+		"a": "Our collection includes Swiss automatic movements tuned to ±3 seconds/day and solar quartz for set-and-forget convenience.",
+		"tags": ["movement","automatic","quartz","solar","swiss"]
+	},
+	{
+		"id": "sizing",
+		"q": "How do I choose the right size?",
+		"a": "Most models are 39–42mm which fits a wide range of wrists. For slimmer wrists, consider Minimalist (38mm). For larger presence, Oceanic (42mm) or Metro Chrono (41mm).",
+		"tags": ["size","sizing","fit","wrist","mm","diameter"]
+	},
+	{
+		"id": "discounts",
+		"q": "Any discounts available?",
+		"a": "We occasionally run seasonal promotions. Subscribe to our newsletter at checkout to be notified. Free shipping is always included.",
+		"tags": ["discount","promo","sale","coupon","offer"]
+	},
+	{
+		"id": "support-hours",
+		"q": "When is support available?",
+		"a": "Human support is available Mon–Fri, 9am–6pm local time. The AI assistant is available 24/7.",
+		"tags": ["support","help","hours","contact","availability"]
+	}
+]
+
+
